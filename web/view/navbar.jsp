@@ -31,18 +31,8 @@
             } else {
         %>
                 <a class="btn btn-default my-2 my-lg-0"><%= fullName%></a>
-                <button class="btn btn-default" type="button" onclick="logout()">
-                    Logout
-                </button>
         <%
             }
         %>
     </div>
 </nav>
-<script>
-    function logout() {
-        var JSESSIONID = document.cookie;
-        console.log(JSESSIONID);
-        document.cookie = "JSESSIONID=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
-    }
-</script>
